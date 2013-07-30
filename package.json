@@ -1,0 +1,21 @@
+{
+  "name": "superhero",
+  "version": "0.0.0",
+  "description": "superhero of NPM , api wrapper of npm modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turingou/superhero.git"
+  },
+  "keywords": [
+    "superhero"
+  ],
+  "author": "turing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turingou/superhero/issues"
+  }
+}
