@@ -12,6 +12,7 @@ logs
 results
 psd
 thumb
+node_modules
 
 npm-debug.log
 *.sublime*
