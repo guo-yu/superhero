@@ -1,21 +1,31 @@
 {
   "name": "superhero",
-  "version": "0.0.0",
-  "description": "superhero of NPM , api wrapper of npm modules",
+  "version": "0.0.1",
+  "description": "superhero is a api wrapper/spider of NPM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha ./test.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/turingou/superhero.git"
   },
   "keywords": [
-    "superhero"
+    "superhero",
+    "npm",
+    "npm-api"
   ],
   "author": "turing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/turingou/superhero/issues"
+  },
+  "dependencies": {
+    "beer": "*",
+    "cheerio": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
   }
 }
