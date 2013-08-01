@@ -13,6 +13,8 @@ results
 psd
 thumb
 node_modules
+*.DS_*
+demo.png
 
 npm-debug.log
 *.sublime*

@@ -23,7 +23,9 @@
   "dependencies": {
     "beer": "*",
     "cheerio": "*",
-    "async": "*"
+    "async": "*",
+    "canvas": "*",
+    "request" : "*"
   },
   "devDependencies": {
     "mocha": "*",

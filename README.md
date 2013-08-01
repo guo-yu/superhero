@@ -7,6 +7,7 @@ superhero is a api wrapper/spider of NPM
 ````
 $ npm install superhero
 ````
+if you wanna creare superhero developer card, make sure Cairo is installed, [check out Cairo install guide](https://github.com/LearnBoost/node-canvas/wiki/_pages)
 
 ## Sample code
 

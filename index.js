@@ -6,8 +6,10 @@
 //           /_/                                      
 // superhero is a api wrapper/spider of NPM
 
-exports.user = require('./lib/user').user;
+var user = require('./lib/user');
+exports.user = user.user;
 exports.pkg = require('./lib/pkg');
+exports.card = require('./lib/card');
 
 // fetch user info
 exports.fetch = function(username, callback) {
@@ -23,6 +25,9 @@ exports.vs = function(usernames, callback) {
 
 }
 
-// exports.fetch('turing', function(user) {
-//     console.log(user.packages);
-// });
+exports.fetch('turing', function(user) {
+    // console.log(user.packages);
+    exports.card.create(user)
+});
+
+// exports.card.create();
