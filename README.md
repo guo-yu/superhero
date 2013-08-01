@@ -25,6 +25,12 @@ superhero.vs(['turing','jacksontian'],function(err,result){
     console.log(result.winner)
     console.log(result.stats)
 });
+
+// create User instances
+var me = superhero.user('turing');
+
+// create Package instances by package name
+var pkg = superhero.pkg('superhero');
 ````
 
 ## API
@@ -43,14 +49,15 @@ superhero.vs(['turing','jacksontian'],function(err,result){
         - `appnet` [String]
         - `irc` [String]
     - `packages`: [Array] packages belong to the user, only fetch latest version of every package
-        - `downloads` [Object]
-            - `lastDay`: [Number]
-            - `lastWeek`: [Number]
-            - `lastMonth`: [Number]
         - `name`
-        - `description`
-        - `main`
-        - ... same as `package.json`
+        - `downloads` [Array]
+            - `downloads in the last day`: [Number]
+            - `downloads in the last week`: [Number]
+            - `downloads in the last month`: [Number]
+        - `details`
+            - `description`
+            - `main`
+            - ... same as `package.json`
 
 ### superhero.vs([username1,username2],callback)
 - `usernames` [Array] usernames of NPM, e.g: `'turing','jacksontian'` add as much as you like.
@@ -65,6 +72,13 @@ superhero.vs(['turing','jacksontian'],function(err,result){
             - `username1` [Number]
             - `username1` [Number]
             - ...
+
+### superhero.user(username,html)
+- `username` [String]
+- `html` [String]:  user home page html string.
+
+### superhero.pkg(pkgname) 
+- `pkgname` [String]
 
 ## Run unit-test (Mocha)
 
