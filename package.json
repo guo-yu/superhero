@@ -1,6 +1,6 @@
 {
   "name": "superhero",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "superhero is a api wrapper/spider of NPM",
   "main": "index.js",
   "scripts": {

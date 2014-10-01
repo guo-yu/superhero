@@ -25,9 +25,9 @@ exports.vs = function(usernames, callback) {
 
 }
 
-exports.fetch('turing', function(user) {
-    // console.log(user.packages);
-    exports.card.create(user);
-});
+// exports.fetch('turing', function(user) {
+//     // console.log(user.packages);
+//     exports.card.create(user);
+// });
 
 // exports.card.create();
